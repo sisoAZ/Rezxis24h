@@ -1,1 +1,1 @@
-TESTTESTTEST
+Rezxisのサーバーをランチャー無しで起動できます。
