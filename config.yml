@@ -1,0 +1,15 @@
+settings:
+    #Login without password and email address
+    #Not available on Linux
+    mail_pass_login: no
+
+#If mail_pass_login is yes
+account:
+    mail: testmail@otomedomain.com
+    password: passwordddd
+
+discord:
+    discord_notification: no
+    #Please enter in ""
+    token: "doIHwAIShdoiHWDA"
+    userid: "98539843924387"
