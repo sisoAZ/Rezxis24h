@@ -24,7 +24,7 @@ if (config.mail_pass_login === "no") {
 }
 
 //console.log(profile + ", " + auth + "," + profileID + "test ->" + process.env.APPDATA);
-//console.log(`kuso seiyaku ${config.mail_pass_login} ${config.mail} ${config.password}`);
+//console.log(`debugg ${config.mail_pass_login} ${config.mail} ${config.password}`);
 
 if (config.mail_pass_login === "yes") {}
 else {
@@ -42,16 +42,18 @@ function main() {
     if (config.mail_pass_login === "yes") {
         bot = mineflayer.createBot({
             host: "mchosting.rezxis.net",
-                port: 25565,
-                username: config.mail,
-                password: config.password
+            port: 25565,
+            username: config.mail,
+            password: config.password,
+            version: config.version
         })
     }
     else {
         bot = mineflayer.createBot({
             host: "mchosting.rezxis.net",
             port: 25565,
-            session
+            session,
+            version: config.version
         })
     }
     

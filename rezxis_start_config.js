@@ -3,6 +3,7 @@ const fs = require("fs");
 const sleep = require('sleep-async')();
 
 let mail_pass_login;
+let version;
 let mail;
 let password;
 let discord;
@@ -13,6 +14,7 @@ try {
     const body = yaml.safeLoad(fs.readFileSync(`${process.cwd()}\\config.yml`, 'utf8'));
     console.log(body);
     mail_pass_login = body["settings"]["mail_pass_login"];
+    version = body["settings"]["version"];
     if (mail_pass_login === "yes") {
         mail = body["account"]["mail"];
         password = body["account"]["password"];
@@ -32,6 +34,7 @@ try {
 }
 
 exports.mail_pass_login = mail_pass_login;
+exports.version = version;
 exports.mail = mail;
 exports.password = password;
 exports.discord = discord;

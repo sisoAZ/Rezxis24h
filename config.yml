@@ -2,6 +2,8 @@ settings:
     #Login without password and email address
     #Not available on Linux
     mail_pass_login: no
+    #Minecraft version select (Default 1.12.2)
+    version: "1.12.2"
 
 #If mail_pass_login is yes
 account:
